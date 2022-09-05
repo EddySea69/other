@@ -1,0 +1,127 @@
+
+@font-face{
+    font-family: Karla;
+    src: url(../fonts/Karla-Regular.ttf);
+}
+
+body{        
+    font-size: 16px; 
+    background-color: hsl(204, 43%, 93%);
+    font-family: Karla;    
+}
+
+.box{
+    width: 45%;       
+    align-items: center;   
+    justify-content: center;
+    margin-top: auto;
+    padding: 0px;    
+}
+
+.topo{
+    background-color: white;   
+    padding: 40px 60px 40px 40px; 
+    margin-top: 20%; 
+    border-radius: 20px 20px 0px 0px;   
+}
+
+.topo .fs-4{
+    color:  hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+
+.topo .fs-6{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+.topo p{
+    margin-bottom: 0;
+    color:hsl(218, 22%, 67%);
+}
+
+.square {
+    padding: 40px 40px 20px 40px;
+    margin: 0%;
+}
+
+.title{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+
+.left{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 20px;    
+}
+
+.left span{
+    margin-right: 5px;
+}
+
+.right{
+    background-color: hsl(179, 48%, 57%);
+    border-radius: 0px 0px 20px 0px;
+    text-align:left; 
+}
+
+.right p{
+    padding-right: 50px;
+}
+
+.bt{
+    border-radius: 5px; 
+    padding: 15px;
+    margin-top: 10px;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    color: hsl(204, 43%, 93%) ;
+    border: 0px;    
+}
+
+.left .btn-primary:hover{
+    background-color: hsl(71, 61%, 48%);           
+}
+
+/* responsive */
+@media screen and (max-width:991px){ 
+
+    .box{
+        padding: 0px;        
+    }
+
+    .left{       
+        border-radius: 0px;    
+    }
+    
+    .right{       
+        border-radius: 0px 0px 20px 20px;     
+        margin-bottom: 20%;   
+    }
+
+}
+
+@media screen and (max-width:575px){ 
+   
+    .box{
+        width: 80%;                       
+    }
+
+
+    .topo{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .square {
+        padding-left:20px;
+        padding-right:20px;
+        margin: 0%;
+    }
+
+}
+
