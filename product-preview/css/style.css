@@ -1,0 +1,130 @@
+
+@font-face{
+    font-family: Fraunces;
+    src: url(../fonts/frauncessoftwonkopszwght.ttf);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+body{        
+    font-size: 16px; 
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;       
+}
+
+.box{
+    width: min(750px,80%);           
+    padding: 0px;        
+}
+
+.box .row{
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.square {
+    padding: 40px 40px 40px 40px;
+    margin: 0%;    
+}
+
+.image{
+    background: url(../images/image-product-desktop.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;    
+}
+
+.right{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 20px 20px 0px;    
+}
+
+.right p {
+    color: hsl(228, 12%, 48%);     
+    font-weight: 500;
+    
+}
+
+.right .title{
+    font-weight: 700;
+    font-family: Fraunces;
+    line-height: normal;
+    color: hsl(212, 21%, 14%);    
+}
+
+.right .price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.bt{
+    border-radius: 5px; 
+    padding: 15px;
+    margin-top: 10px;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    color: hsl(204, 43%, 93%) ;
+    border: 0px; 
+    width: 100%;   
+}
+
+i{
+    margin-right: 10px;
+}
+
+.btn-primary:hover{
+    background-color: hsl(158, 32%, 45%) ;           
+}
+
+/* responsive */
+@media screen and (max-width:991px){ 
+
+    .box{
+        padding: 0px;
+        padding-top: 250px; 
+        padding-bottom: 100px;       
+    }
+
+    .image{       
+        border-radius: 20px 20px 0px 0px; 
+        background: url(../images/image-product-mobile.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 500px;   
+    }
+    
+    .right{       
+        border-radius: 0px 0px 20px 20px;     
+        margin-bottom: 20%;   
+    }
+
+}
+
+@media screen and (max-width:575px){ 
+
+   
+    .square {
+        padding-left:20px;
+        padding-right:20px;
+        margin: 0%;
+    }
+
+    .box{
+        padding-top: 100px;                
+    }
+
+
+    .image{       
+        padding-top: 200px;   
+    }
+
+}
+
