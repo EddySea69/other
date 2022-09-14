@@ -1,0 +1,138 @@
+
+@font-face{
+    font-family: Overpass;
+    src: url(../fonts/Overpass-Regular.ttf);
+}
+
+
+body{        
+    font-size: 15px; 
+    background-color: hsl(216, 12%, 8%);
+    font-family: Overpass;
+    
+}
+
+.box{
+    width: min(750px,80%);           
+    padding: 0px;        
+}
+
+.box .row{
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.square{
+    padding: 30px;
+    margin: 0%;   
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px 30px 30px 30px;    
+}
+
+.icon{
+    border-radius: 50%;
+    background-color: hsl(214, 17%, 26%);    
+    padding: 15px;
+}
+
+.square .title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.square .regular{
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.btn-secondary{
+    background-color: hsl(214, 17%, 26%);  
+    border-radius: 50%;
+    padding: 10px 18px 10px 18px;
+    border: 0px;
+    color: hsl(217, 12%, 63%);
+}
+
+.btn-secondary:hover{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.btn-secondary:focus{
+    color:hsl(204, 43%, 93%) ;
+}
+
+.bt{
+    border-radius: 40px; 
+    padding: 15px;
+    margin-top: 30px;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    color: hsl(204, 43%, 93%) ;
+    text-transform: uppercase;
+    border: 0px; 
+    width: 100%;       
+}
+
+.btn-primary:hover{
+    background-color: hsl(25, 97%, 53%);       
+    color: hsl(204, 43%, 93%) ;
+    border: 0px;  
+} 
+
+.btn-primary:focus{
+    color: hsl(25, 97%, 53%);
+    background-color:hsl(0, 0%, 100%);
+    border-color:hsl(0, 0%, 100%);
+    border: 0px;
+    box-shadow:0 0 0 .0 hsl(0, 0%, 100%);
+   }
+
+
+#thanks-state{
+    text-align: center;
+    display: none;
+}
+
+#rate-text{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(214, 17%, 26%);    
+    margin: 40px 60px 20px 60px;
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px ;
+    font-weight: 400;
+    
+}
+   
+
+/* responsive */
+
+@media screen and (max-width:575px){ 
+
+   
+    .square {
+        padding-left:20px;
+        padding-right:20px;
+        margin: 0%;
+    }
+
+
+    #rate-text{
+         
+        margin: 40px 30px 20px 30px;
+        padding: 5px 10px 5px 10px ;
+        
+    }
+    
+   
+}
+
+

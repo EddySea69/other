@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Interactive rating component</title>
+
+</head>
+<body>
+
+  
+    <div class="container box" role="main">   
+  
+        <div class="row">
+
+          <div class="col-12 col-sm-8 col-md-6 col-lg-6  square" id="rating-state">
+
+            <img src="images/icon-star.svg" class="icon" alt="icon-star">
+
+            <p class="title fs-3">How did we do?</p>
+            <p class="regular">Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!</p>
+
+            <div class="group">
+                <button type="button" class="btn btn-secondary" value="1" id="bt1" onclick="clicked('bt1')">1</button>
+                <button type="button" class="btn btn-secondary" value="2" id="bt2" onclick="clicked('bt2')" >2</button>
+                <button type="button" class="btn btn-secondary" value="3" id="bt3" onclick="clicked('bt3')">3</button>
+                <button type="button" class="btn btn-secondary" value="4" id="bt4" onclick="clicked('bt4')">4</button>
+                <button type="button" class="btn btn-secondary" value="5" id="bt5" onclick="clicked('bt5')">5</button>
+            </div>
+
+            <button class="btn btn-primary bt" onclick="submite()">Submit</button> 
+
+            <div id="validation" class="invalid-feedback">
+                Please provide a rate.
+              </div>
+
+              
+           
+          </div>
+
+
+          <div class="col-12 col-sm-8 col-md-6 col-lg-6 square" id="thanks-state">
+            <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+            <p id="rate-text"> You selected x out of 5</p>
+            <p class="title fs-3">Thank you!</p>
+            <p class="regular"> We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!</p>
+
+
+
+          </div>
+
+
+      
+         </div>
+      
+      </div>
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
