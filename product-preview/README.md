@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Product Preview Component Files](https://github.com/EddySea69/other)
+- Solution URL: [Product Preview Component Files](https://github.com/EddySea69/other/tree/main/product-preview)
 - Live Site URL: [product-previwe-compont](https://eddysea69.github.io/other/product-preview/)
 
 ## My process
