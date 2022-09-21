@@ -1,0 +1,111 @@
+
+@font-face{
+    font-family: Fraunces;
+    src: url(../fonts/frauncessoftwonkopszwght.ttf);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body{        
+    font-size: 16px; 
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;       
+}
+
+.box{
+    width: min(750px,80%);           
+    padding: 0px;        
+}
+
+.box .row{
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.square {
+    padding:  1.25rem;
+    margin: 0%;    
+}
+
+.image{
+    padding: 0px;    
+}
+
+.image img{
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 20px 0px 0px 20px;    
+    display: block;    
+}
+
+.right{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 20px 20px 0px;    
+}
+
+.right p {
+    color: hsl(228, 12%, 48%);     
+    font-weight: 500;
+    
+}
+
+.right .title{
+    font-weight: 700;
+    font-family: Fraunces;
+    line-height: normal;
+    color: hsl(212, 21%, 14%);    
+}
+
+.right .price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.bt{
+    border-radius: 5px; 
+    padding: 15px;
+    margin-top: 0.625rem;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    color: hsl(204, 43%, 93%) ;
+    border: 0px; 
+    width: 100%;   
+    transition: 0.5s;         
+}
+
+i{
+    margin-right: 0.625rem;
+}
+
+.btn-primary:hover{
+    background-color: hsl(158, 32%, 45%) ;      
+}
+
+/* responsive */
+@media screen and (max-width:991px){ 
+
+    .box{
+        padding: 0px;
+        padding-top: 2.125rem; 
+        padding-bottom: 1.25rem;       
+    }
+
+    .image img{       
+        border-radius: 20px 20px 0px 0px;       
+    }
+    
+    .right{       
+        border-radius: 0px 0px 20px 20px;            
+    }
+
+}
+
+
+
