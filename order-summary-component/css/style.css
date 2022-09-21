@@ -1,0 +1,135 @@
+
+@font-face{
+    font-family: RedHat;
+    src: url(../fonts/RedHat.ttf);
+}
+
+ div, p{
+    margin: 0px;
+}
+
+body{      
+    font-family: RedHat;  
+    font-size: 16px;     
+    background: url(../images/pattern-background-desktop.svg) no-repeat;    
+    background-size: cover;    
+    background-color: hsl(225, 100%, 94%);
+}
+
+.box{
+    width: min(900px,86%);           
+    padding: 0;            
+}
+
+.box .row{
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.row, .col{
+    padding: 0px;
+}
+
+.card-img-top{
+    border-radius: 20px 20px 0px 0px;    
+}
+
+.card{
+    border-radius: 20px 20px 20px 20px; 
+    text-align: center;  
+    box-shadow: 0px 20px  hsla(227, 15%, 88%, 0.568); 
+}
+
+.card-title, .plan p{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;    
+}
+
+.card-body{
+    padding: 3.4375rem;      
+}
+
+.card-text{
+    padding: 0.3125rem;
+    font-weight: 500; 
+    color:  hsl(224, 23%, 55%);
+}
+
+.price{
+    min-width: 100%;    
+    background-color: hsl(225, 100%, 98%); 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin-top: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan span{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.price a{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.price a:hover{
+    text-decoration: none;
+    color:  hsl(224, 55%, 54%);
+}
+
+
+.paymant .btn-primary{
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    min-width: 100%;
+    padding: 0.75rem 0.9375rem 0.75rem 0.9375rem;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 0.625rem;
+    box-shadow: 0px 20px  hsl(225, 100%, 98%);
+}
+
+.paymant .btn-primary:hover{
+    background-color: hsl(224, 55%, 54%);
+}
+
+.paymant #cancel{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.paymant #cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+/* 
+responsive */ 
+ @media screen and (max-width:991px){ 
+
+    body{      
+        background: url(../images/pattern-background-mobile.svg) no-repeat;    
+        background-size: cover;    
+    }
+
+} 
+
+ @media screen and (max-width:575px){ 
+
+    .card-body{
+        padding:1rem;      
+    }   
+
+}  
+
