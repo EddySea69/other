@@ -1,0 +1,381 @@
+
+@font-face{
+    font-family: SpaceGrotesk;
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: SpaceGrotesk;
+    font-size: 18px !important;
+}
+
+
+.left{
+    background: url(../images/bg-main-desktop.png) no-repeat;
+    background-position: center;
+    background-size: cover;   
+    height: 100vh;
+    padding-left: 0.7778rem !important;
+    padding-right: 0.7778rem !important;
+}
+
+.card-wraper {
+    display: flex;
+    flex-direction: column;    
+}
+
+.card-front{
+    position: relative;
+    background: url(../images/bg-card-front.png) no-repeat;
+    background-position: center;
+    background-size: cover;   
+    /* max-width: 86%;  */
+    width: max-content;
+    max-width: 100%;
+    color: hsl(0, 0%, 100%);       
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    top: 186px;
+    right: 0rem;
+    left: 150px;
+    border-radius:10px;  
+    z-index: 0;
+    
+}
+
+.card-logo{
+    width: auto;
+    margin-bottom: 60px;
+}
+
+#card-number{
+    margin-bottom: 20px;
+    font-size: 28px !important;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+#card-name{
+    font-size: 14px !important;
+    margin-bottom:6px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#card-date{
+    font-size: 14px !important;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 6px;
+    margin-top: auto;
+}
+
+/* ____________________________________ */
+
+/* CARD_BACK */
+
+
+.card-back p{
+    margin: 0px; 
+    font-size: 16px !important;  
+}
+
+.card-back{
+    position: relative;
+    background: url(../images/bg-card-back.png) no-repeat;
+    background-position: center;
+    background-size: cover;    
+    color: hsl(0, 0%, 100%);
+    padding: 110px 80px 110px 345px;
+    width: max-content;
+    /* max-width: 86%; */
+    max-width: 100%;  
+    top: 222px;
+    right: 0rem;
+    left: 245px;
+    border-radius:5px;  
+    text-align: center;  
+    
+}
+
+
+/* right div */
+.right{
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 275px;
+    padding-right:0px !important ;
+    padding-left: 350px !important;
+}
+
+
+body > div.row.m-0 > div.col-12.right > form{
+    padding-left: 0.5556rem;
+    padding-right: 0.5556rem;
+}
+
+.right .input-group{
+    flex-direction: column;
+}
+
+.input-group>label{
+    font-size: 12px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ .input-group>.form-control {
+ 
+    min-width: 100% !important;
+    border-radius: 8px !important;
+    
+} 
+
+.date-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Exdate{
+    flex-basis: 47%;
+}
+
+.btn-primary{
+    width: 100%;    
+    background-color: hsl(278, 68%, 11%) !important;
+    border-color:  hsl(278, 68%, 11%) !important;
+    margin-top: 25px;
+    margin-bottom: 2.7778rem;
+    padding: 0.6667rem 0.5556rem  !important;
+}
+
+
+/* active states */
+
+.btn-primary:focus{
+    border-color:  hsl(278, 68%, 11%) !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+
+.form-control:focus{
+ 
+    border-color: hsl(249, 99%, 64%) !important;
+    box-shadow: 0 0 0 0 !important;
+} 
+
+
+.invalid-feedback{
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+#complete-state{
+    text-align: center;  
+    padding-top: 30px;  
+    display: none; 
+}
+
+#complete-state .thanks{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 32px !important;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:575px){ 
+
+.left{
+    background: url(../images/bg-main-mobile.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 240px; */
+    height: 13.3333rem;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.card-wraper {
+    display: flex;
+    flex-direction: column-reverse;    
+}
+
+.card-back p{
+    margin: 0px; 
+    font-size: 10px !important;  
+}
+
+.card-back{
+    /* align-self: center; */
+    position: relative;
+    background: url(../images/bg-card-back.png) no-repeat;
+    background-position: center;
+    background-size: cover;    
+    color: hsl(0, 0%, 100%);
+    padding:3.8889rem 2.2222rem 3.8889rem 11.3889rem;
+    width: max-content;
+    /* max-width: 86%; */
+    max-width: 100%;
+    top: 1.7778rem;
+    right: 0rem;
+    left: 3.3333rem;
+    border-radius:5px;  
+    text-align: center;  
+    
+}
+
+.card-front{
+    position: relative;
+    background: url(../images/bg-card-front.png) no-repeat;
+    background-position: center;
+    background-size: cover;   
+    /* max-width: 86%;  */
+    width: max-content;
+    max-width: 100%;
+    color: hsl(0, 0%, 100%);    
+    padding-top: 1rem;
+    padding-left: 1.1111rem;
+    padding-right: 1.1111rem;
+    padding-bottom: 0.2222rem;
+    top: -1.8333rem;
+    right: 0rem;
+    left: 0.1667rem;
+    border-radius:5px;  
+    z-index: 1;
+    
+}
+
+.card-logo{
+    width: 3.0556rem;
+    margin-bottom: 1.9444rem;
+}
+
+#card-number{
+    margin-bottom: 0.5556rem;
+    font-size: 18px !important;
+    letter-spacing: 0.1111rem;
+    word-spacing: 0.0556rem;
+}
+
+#card-name{
+    font-size: 12px !important;
+    margin-bottom: 0.8889rem;
+    text-transform: uppercase;
+}
+
+#card-date{
+    font-size: 12px !important;
+    margin-bottom: 0.8889rem;
+    margin-top: auto;
+}
+
+
+/* right div */
+.right{
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 5rem;
+    padding-right:14px !important ;
+    padding-left: 14px !important;
+}
+body > div.row.m-0 > div.col-12.right > form{
+    padding-left: 0.5556rem;
+    padding-right: 0.5556rem;
+}
+
+.right .input-group{
+    flex-direction: column;
+}
+
+.input-group>label{
+    font-size: 12px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ .input-group>.form-control {
+ 
+    min-width: 100% !important;
+    border-radius: 8px !important;
+    
+} 
+
+.date-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Exdate{
+    flex-basis: 47%;
+}
+
+
+.btn-primary{
+    width: 100%;    
+    background-color: hsl(278, 68%, 11%) !important;
+    border-color:  hsl(278, 68%, 11%) !important;
+    margin-top: 15px;
+    margin-bottom: 2.7778rem;
+    padding: 0.6667rem 0.5556rem  !important;
+}
+
+
+#complete-state{
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+
+    
+    
+   
+    
+}  
